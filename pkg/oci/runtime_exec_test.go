@@ -77,7 +77,7 @@ func TestSyscallExecForwardsArgs(t *testing.T) {
 			errorPrefix: "unexpected return from exec",
 		},
 	}
-
+	panic("sss")
 	for i, tc := range testCases {
 		execMock := WithMockExec(f, tc.returnError)
 
